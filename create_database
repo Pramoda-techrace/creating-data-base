@@ -1,0 +1,10 @@
+
+#create   database   [if not exists]    sales;
+#use sales;
+CREATE TABLE `sales` (
+  `purchase_number` int NOT NULL AUTO_INCREMENT,
+  `date_of_purchase` date NOT NULL,
+  `customer_id` int DEFAULT NULL,
+  `item_code` varchar(10) NOT NULL,
+  PRIMARY KEY (`purchase_number`)
+):
